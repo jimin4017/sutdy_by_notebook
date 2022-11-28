@@ -15,6 +15,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      home: Scaffold(
+        appBar: AppBar(),
+        body: ShopItem(),
+      ),
+    );
+  }
+}
+
+class ShopItem extends StatelessWidget {
+  //커스템 위젯
+  const ShopItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Text('안녕'),
     );
   }
 }
