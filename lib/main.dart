@@ -17,19 +17,18 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(),
-        body: ShopItem(),
+        body: const ShopItem(),
       ),
     );
   }
 }
 
 class ShopItem extends StatelessWidget {
-  //커스템 위젯
   const ShopItem({super.key});
 
-  @override
+  @override // 중복되는거 해결 내꺼 먼저 해결해 주세요.
   Widget build(BuildContext context) {
-    return SizedBox(
+    return const SizedBox(
       child: Text('안녕'),
     );
   }
